@@ -19,7 +19,7 @@ EMAIL_SUBJECT = "Watch Dog alarms active!"
 EMAIL_FROM = "<Your email address>"
 EMAIL_PASSWORD = "<Your password>"
 EMAIL_TO = "<Recipient email address>"
-EMAIL_SERVER_HOSTNAME = "smtp.gmail.com"
+EMAIL_SERVER_HOSTNAME = "<Your SMTP server address>" # e.g. smtp.gmail.com, etc
 EMAIL_SERVER_PORT = 587
 
 def sendEmail(emailBody):

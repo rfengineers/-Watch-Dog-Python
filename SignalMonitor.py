@@ -145,8 +145,9 @@ setVolume()
 # Tune to desired frequency
 tuneToFreq(FREQ)
 
-# Open log file
+# Open log file and create header row
 logFile = open(strftime("%Y-%m-%d %H:%M:%S") + ".csv", "w")
+logFile.write("timestamp,freq,snr,rss,multipath\r\n")
 
 # Keep polling for readings
 while True:

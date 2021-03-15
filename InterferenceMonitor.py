@@ -3,7 +3,7 @@
 # when SNR drops below a specified threshold
 
 # Example usage:
-#   python SignalMonitor.py
+#   python InterferenceMonitor.py
 
 import sys
 import serial
@@ -134,7 +134,7 @@ if USB_AUDIO_DEVICE_INDEX == -1:
     print("Please set USB_AUDIO_DEVICE_INDEX to an appropriate index from the above list and re-run this program")
     exit()
 
-print("Starting RFEngineers, Inc. Watch Dog Signal Analyzer for " + str(FREQ) + " MHz")
+print("Starting RFEngineers, Inc. Watch Dog Interference Monitor for " + str(FREQ) + " MHz")
 
 # Open Watch Dog serial port
 s = serial.Serial(port = WATCH_DOG_PORT, baudrate = 115200)

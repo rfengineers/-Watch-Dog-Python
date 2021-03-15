@@ -25,7 +25,7 @@ POLL_SECS = 2
 WATCH_DOG_PORT = "/dev/ttyACM0"
 
 # USB audio device index
-USB_AUDIO_DEVICE_INDEX = 2
+USB_AUDIO_DEVICE_INDEX = -1
 
 # How many seconds of audio to record for each audio sample
 AUDIO_SECONDS = 3

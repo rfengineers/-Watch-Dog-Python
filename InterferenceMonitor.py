@@ -68,7 +68,7 @@ def recordAudio(freq):
 
     timestamp = strftime("%Y-%m-%d %H:%M:%S")
 
-    wavefile = wave.open(str(freq) + " MHz " + timestamp + ".wav", "wb")
+    wavefile = wave.open(timestamp + " " + str(freq) + " MHz.wav", "wb")
     wavefile.setnchannels(AUDIO_NUM_CHANNELS)
     wavefile.setsampwidth(audio.get_sample_size(pyaudio.paInt16))
     wavefile.setframerate(AUDIO_SAMPLE_RATE)
